@@ -8,7 +8,7 @@ TEST(Tonkov_Alexei_ComplexNumberTest, Creation_Without_Args) {
     // Arrange & Act
     ComplexNumber a(0.0, 0.0);
     ComplexNumber b;
-
+		
     // Assert
     EXPECT_EQ(a, b);
 }

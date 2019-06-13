@@ -5,7 +5,6 @@
 #include <iostream>
 #include <string>
 
-
 std::string Number_to_Word::wordForNumber(static long int number) {
     if (number < 10) {
         return ones[number];

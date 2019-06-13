@@ -16,27 +16,3 @@ TEST(Number_to_word, five_to_word) {
     //Assert
     EXPECT_EQ("five", output);
 }
-
-TEST(Number_to_word, tens_to_word) {
-    // Arrange
-    long int input = 5;
-    string output;
-
-    // Act
-    output = Number_to_Word::wordForNumber(input);
-    
-    //Assert
-    EXPECT_EQ("five", output);
-}
-
-TEST(Number_to_word, hundreds_to_word) {
-    // Arrange
-    long int input = 5;
-    string output;
-
-    // Act
-    output = Number_to_Word::wordForNumber(input);
-
-    //Assert
-    EXPECT_EQ("five", output);
-}

@@ -5,19 +5,38 @@
 
 #include <string>
 
-TEST(Number_to_word, 5_to_word) {
+TEST(Number_to_word, five_to_word) {
+    // Arrange
+    long int input = 5;
+    string output;
 
-	Number_To_Word a;
-	std::string str = "five";
-
-	ASSERT_EQ(a.nameForNumber(5), str);
+    // Act
+    output = Number_to_Word::wordForNumber(input);
+    
+    //Assert
+    EXPECT_EQ("five", output);
 }
 
-TEST(Number_to_word, 22_to_word) {
+TEST(Number_to_word, tens_to_word) {
+    // Arrange
+    long int input = 5;
+    string output;
 
-	Number_To_Word a;
-	std::string str = "twenty two";
-
-	ASSERT_EQ(a.nameForNumber(22), str);
+    // Act
+    output = Number_to_Word::wordForNumber(input);
+    
+    //Assert
+    EXPECT_EQ("five", output);
 }
 
+TEST(Number_to_word, hundreds_to_word) {
+    // Arrange
+    long int input = 5;
+    string output;
+
+    // Act
+    output = Number_to_Word::wordForNumber(input);
+
+    //Assert
+    EXPECT_EQ("five", output);
+}
